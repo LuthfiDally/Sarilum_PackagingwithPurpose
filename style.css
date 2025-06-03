@@ -329,6 +329,10 @@ body {
     padding: 6rem 0;
 }
 
+#products {
+  margin-top: 3rem;
+}
+
 section {
     transition: background-color 0.5s ease;
 }
@@ -383,6 +387,27 @@ section {
     font-weight: 600;
     font-size: 0.8rem;
     z-index: 2;
+}
+
+.client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-logos img {
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.client-logos img:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }
 
 /* Disposal Guide Section */
@@ -1393,3 +1418,29 @@ footer {
     cursor: pointer;
   }
 }
+section {
+  padding: 6rem 1.5rem;
+  scroll-margin-top: 80px; /* biar offset scroll tidak nabrak navbar */
+}
+.hero {
+  height: auto;
+  min-height: calc(100vh - 80px);
+  padding-bottom: 5rem;
+}
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
