@@ -1358,3 +1358,38 @@ footer {
     background: white;
     border: 1px solid #E0E0E0;
 }
+
+@media (max-width: 768px) {
+  .product-card {
+    grid-template-columns: 1fr;
+  }
+
+  .product-info {
+    padding: 1.2rem;
+  }
+
+  .gallery-slider {
+    height: 250px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
